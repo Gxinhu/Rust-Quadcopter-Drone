@@ -12,11 +12,15 @@ edition = "2021"
 # name = "gyroscope"
 # path = "src/gyroscope/main.rs"
 [[bin]]
-name = "ppm"
-path = "src/ppm/main.rs"
+name = "ppm2pwm"
+path = "src/ppm2pwm/main.rs"
 # [[bin]]
 # name = "led"
 # path = "src/led/main.rs"
+
+# [[bin]]
+# name = "pwm"
+# path = "src/pwm/main.rs"
 [dependencies]
 rtic = { version = "2", features = ["thumbv7-backend"] }
 rtic-monotonics = { version = "1.5", default-features = false, features = ["cortex-m-systick","systick-10khz"] }
